@@ -19,6 +19,8 @@ User.destroy_all
 
 puts 'creating new users....'
 
+
+jose = User.create(email: "jose@gmail.com", password: "123456")
 alex = User.create(email: "mary@gmail.com", password: "123456")
 
 puts "Created #{User.count} users"
@@ -30,6 +32,52 @@ puts '-----------------------'
 puts '-----------------------'
 
 puts 'creating new superheros....'
+
+spiderman = Superhero.create(
+  name: "Spiderman",
+  description: "Your best friend and coolest superhero",
+  price: 100,
+  superpower: "superweb",
+  photo_url:"https://blog.playstation.com/tachyon/2022/06/0c3c20a8d8514501524a0859461f391572ea6e61.jpg",
+  user_id: jose.id
+)
+
+batman = Superhero.create(
+  name: "batman",
+  description: "I am very serious guy but I am soft inside, Also I am rich",
+  price: 200000000,
+  superpower: "super intelligence",
+  photo_url:"https://live.staticflickr.com/3433/3987139213_2b2cdab4a7_b.jpg",
+  user_id: jose.id
+)
+
+lukas the barbarian = Superhero.create(
+  name: "Lukas the Barbarian",
+  description: "I am a latino Lover",
+  price: 500000,
+  superpower: "The power of knowledge",
+  photo_url: "https://cdn.britannica.com/31/182831-050-3F0A0CCE/Arnold-Schwarzenegger-title-character-Conan-the-Destroyer.jpg?w=300&h=300",
+  user_id: jose.id
+)
+
+borhan thor = Superhero.create(
+  name: "Borhan Thor",
+  description: "I am the God of Gods and I have an amazing hair",
+  price: 100000000,
+  superpower: "The power of love",
+  photo_url: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Chris_Hemsworth_as_Thor.jpg/220px-Chris_Hemsworth_as_Thor.jpg",
+  user_id: jose.id
+)
+
+aquaman = Superhero.create(
+  name: "aquaman",
+  description: "I just swim and my only friends are fishes",
+  price: 1,
+  superpower: "just a normal guy that knows how to swim",
+  photo_url: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/aquaman-1550228807.jpg?crop=0.796xw:0.796xh;0.156xw,0.112xh&resize=1200:*",
+  user_id: jose.id
+  
+  
 wonderwoman = Superhero.create(
   name: "Wonderwoman",
   description: "Wonder Woman is like a fierce and fabulous Amazonian goddess who can kick butt and take names while rocking a tiara and bullet-deflecting bracelets. She's got more strength than a lasso of truth and more style than a superhero fashion runway show. And let's not forget about her invisible jet - it's like the ultimate Uber ride, except you can't see it and the driver is a demigoddess. Overall, Wonder Woman is the ultimate mix of beauty, brains, and brawn, and she's not afraid to use all of them to save the world!",
@@ -82,11 +130,12 @@ puts '-----------------------'
 puts '-----------------------'
 puts '-----------------------'
 
-puts 'creating new bookings....'
-Booking.create(
-  start_date: Faker::Date.between(from: '2023-02-05', to: '2023-02-28'),
-  end_date: Faker::Date.between(from: '2023-02-28', to: '2023-03-30'),
-  superhero_id: superhero.id,
-  user_id: new_user.id
-)
-puts "Created #{Booking.count} bookings"
+
+# puts 'creating new bookings....'
+#   Booking.create(
+#   start_date: Faker::Date.between(from: '2023-02-05', to: '2023-02-28'),
+#   end_date: Faker::Date.between(from: '2023-02-28', to: '2023-03-30'),
+#   superhero_id: superhero.id,
+#   user_id: new_user.id
+#   )
+# puts "Created #{Booking.count} bookings"
