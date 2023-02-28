@@ -1,6 +1,7 @@
 <div>
   <ul>
     <% @bookings.each do | booking | %>
+      <%= booking.superhero.name %>
       <%= booking.start_date %>
       <%= booking.end_date %>
     <% end %>

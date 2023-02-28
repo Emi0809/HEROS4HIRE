@@ -13,11 +13,16 @@ puts 'destroying all the users..'
 puts '-----------------------'
 puts '-----------------------'
 puts '-----------------------'
+Booking.destroy_all
+Superhero.destroy_all
+User.destroy_all
 
 puts 'creating new users....'
-5.times do
-  User.create(email: Faker::Internet.email, password: Faker::Internet.password)
-end
+
+new_user = User.create(email: "bob@gmail.com", password: "123456")
+
+#second_user = User.create(email: "mary@gmail.com", password: "123456")
+
 puts "Created #{User.count} users"
 
 #Superheros
@@ -27,9 +32,13 @@ puts '-----------------------'
 puts '-----------------------'
 
 puts 'creating new superheros....'
-5.times do
-  Superhero.create(email: Faker::Internet.email, password: Faker::Internet.password)
-end
+    superhero = Superhero.create(
+    name: Faker::Superhero.name,
+    description: Faker::Superhero.descriptor,
+    price: Faker::Commerce.price,
+    superpower: Faker::Superhero.power,
+    user_id: new_user.id
+  )
 puts "Created #{Superhero.count} superheros"
 
 #Bookings
@@ -39,8 +48,10 @@ puts '-----------------------'
 puts '-----------------------'
 
 puts 'creating new bookings....'
-10.times do
-  date = Date.today + rand(20)
-  Booking.create!(start_date: date, end_date: date + rand(5))
-end
+  Booking.create(
+  start_date: Faker::Date.between(from: '2023-02-05', to: '2023-02-28'),
+  end_date: Faker::Date.between(from: '2023-02-28', to: '2023-03-30'),
+  superhero_id: superhero.id,
+  user_id: new_user.id
+  )
 puts "Created #{Booking.count} bookings"
