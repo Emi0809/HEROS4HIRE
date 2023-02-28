@@ -14,9 +14,9 @@ class BookingsController < ApplicationController
     @booking.superhero = @superhero
     @booking.user = current_user
     if @booking.save
-      redirect_to  superhero_path(@superhero)
+      redirect_to superhero_path(@superhero)
     else
-      render :new, status: :unprocessable_entity
+      render "superheros/show", status: :unprocessable_entity
     end
   end
 
