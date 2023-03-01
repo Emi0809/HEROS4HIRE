@@ -51,6 +51,7 @@ batman = Superhero.create(
   user_id: jose.id
 )
 
+
 barbarian = Superhero.create(
   name: "Barbarian",
   description: "I am a latino Lover",
