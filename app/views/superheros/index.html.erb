@@ -1,22 +1,24 @@
-<div>
-  <h1>Superheros</h1>
-  <div class="superheros">
-    <% @superheros.each do |superhero| %>
-      <div>
-        <p>
-          <strong>Name:</strong>
-          <%= superhero.name %>
-        </p>
-        <p>
-          <strong>User:</strong>
-          <%= superhero.user.email %>
-        </p>
-      </div>
+<h1>Superheros</h1>
 
-        <p>
-          <%= link_to "Show this Superhero",  superhero_path(superhero) %>
-        </p>
-    <% end %>
-    <%= link_to "Create a new Superhero", new_superhero_path %>
+
+<%= link_to "Create a new Superhero", new_superhero_path, class:"btn btn-primary"%>
+
+
+
+<div>
+  <div class="superheros">
+    <div class="cards">
+      <% @superheros.each do |superhero| %>
+        <div class="card">
+          <img src="<%= superhero.photo_url %>" alt="<%= superhero.name %>">
+          <div class="info">
+            <h1><%= superhero.name %></h1>
+            <p><strong>Superpower:</strong> <%= superhero.superpower %></p>
+            <p><strong>Description:</strong> <%= superhero.description %></p>
+            <%= link_to "Show this Superhero",  superhero_path(superhero), class:"btn btn-warning" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
