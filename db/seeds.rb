@@ -52,7 +52,7 @@ batman = Superhero.create(
 )
 
 lukas_the_barbarian = Superhero.create(
-  name: "Lukas the Barbarian",
+  name: "Barbarian",
   description: "I am a latino Lover",
   price: 500000,
   superpower: "The power of knowledge",
@@ -60,8 +60,8 @@ lukas_the_barbarian = Superhero.create(
   user_id: jose.id
 )
 
-borhan_thor = Superhero.create(
-  name: "Borhan Thor",
+thor = Superhero.create(
+  name: "Thor",
   description: "I am the God of Gods and I have an amazing hair",
   price: 100000000,
   superpower: "The power of love",
