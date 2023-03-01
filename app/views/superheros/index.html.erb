@@ -1,25 +1,22 @@
+<h1>Superheros</h1>
+
+
+<%= link_to "Create a new Superhero", new_superhero_path, class:"btn btn-primary"%>
+
 <div>
-  <h1>Superheros</h1>
-
   <div class="superheros">
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.britannica.com/31/182831-050-3F0A0CCE/Arnold-Schwarzenegger-title-character-Conan-the-Destroyer.jpg?w=300&h=300)">
-      </div>
+    <div class="cards">
       <% @superheros.each do |superhero| %>
-        <div>
-          <p>
-            <strong>Name:</strong>
-            <%= superhero.name %>
-          </p>
-          <p>
-            <strong>User:</strong>
-            <%= superhero.user.email %>
-          </p>
+        <div class="card">
+          <img src="<%= superhero.photo_url %>" alt="<%= superhero.name %>">
+          <div class="info">
+            <h1><%= superhero.name %></h1>
+            <p><strong>Superpower:</strong> <%= superhero.superpower %></p>
+            <p><strong>Description:</strong> <%= superhero.description %></p>
+            <%= link_to "Show this Superhero",  superhero_path(superhero), class:"btn btn-warning" %>
+          </div>
         </div>
-
-          <p>
-            <%= link_to "Show this Superhero",  superhero_path(superhero) %>
-          </p>
       <% end %>
-    <%= link_to "Create a new Superhero", new_superhero_path %>
+    </div>
   </div>
 </div>

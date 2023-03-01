@@ -1,0 +1,12 @@
+<div class="cards">
+<%= @superhero.each do |superhero| %>
+    <div class="card">
+      <img src="<%= superhero.photo_url %>" alt="<%= superhero.name %>">
+      <div class="info">
+        <h1><%= superhero.name %></h1>
+        <p><strong>Superpower:</strong> <%= superhero.superpower %></p>
+        <p><strong>Description:</strong> <%= superhero.description %></p>
+      </div>
+    </div>
+  <%= end %>
+</div>
