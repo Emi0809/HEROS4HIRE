@@ -1,2 +1,15 @@
 <h1>Pages#home</h1>
 <p>TO INFINITY AND BEYOND</p>
+
+<div class="cards">
+  <% @superheros.each do |superhero| %>
+      <div class="card">
+        <img src="<%= superhero.photo_url %>" alt="<%= superhero.name %>">
+        <div class="info">
+          <h1><%= superhero.name %></h1>
+          <p><strong>Superpower:</strong> <%= superhero.superpower %></p>
+          <p>Description: <%= superhero.description %></p>
+        </div>
+      </div>
+  <% end %>
+</div>
