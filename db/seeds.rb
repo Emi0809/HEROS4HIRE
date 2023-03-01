@@ -19,7 +19,7 @@ User.destroy_all
 
 puts 'creating new users....'
 
-
+emilie = User.create(email: "emilie@gmail.com", password: "123456")
 jose = User.create(email: "jose@gmail.com", password: "123456")
 alex = User.create(email: "mary@gmail.com", password: "123456")
 
