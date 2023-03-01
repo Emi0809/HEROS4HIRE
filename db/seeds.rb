@@ -76,8 +76,8 @@ aquaman = Superhero.create(
   superpower: "just a normal guy that knows how to swim",
   photo_url: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/aquaman-1550228807.jpg?crop=0.796xw:0.796xh;0.156xw,0.112xh&resize=1200:*",
   user_id: jose.id
-  
-  
+)
+
 wonderwoman = Superhero.create(
   name: "Wonderwoman",
   description: "Wonder Woman is like a fierce and fabulous Amazonian goddess who can kick butt and take names while rocking a tiara and bullet-deflecting bracelets. She's got more strength than a lasso of truth and more style than a superhero fashion runway show. And let's not forget about her invisible jet - it's like the ultimate Uber ride, except you can't see it and the driver is a demigoddess. Overall, Wonder Woman is the ultimate mix of beauty, brains, and brawn, and she's not afraid to use all of them to save the world!",
