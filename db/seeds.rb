@@ -43,7 +43,7 @@ spiderman = Superhero.create(
 )
 
 batman = Superhero.create(
-  name: "batman",
+  name: "Batman",
   description: "I am very serious guy but I am soft inside, Also I am rich",
   price: 200000000,
   superpower: "super intelligence",
@@ -70,7 +70,7 @@ thor = Superhero.create(
 )
 
 aquaman = Superhero.create(
-  name: "aquaman",
+  name: "Aquaman",
   description: "I just swim and my only friends are fishes",
   price: 1,
   superpower: "just a normal guy that knows how to swim",
@@ -84,7 +84,7 @@ wonderwoman = Superhero.create(
   price: 69,
   superpower: "Flying",
   user_id: alex.id,
-  photo_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.logotv.com%2Fnews%2Fwai3xs%2Fwonder-woman-cosplay&psig=AOvVaw1q5dN7TxBKFzoeWr9F_n8l&ust=1677687565480000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCJDjmK3PuP0CFQAAAAAdAAAAABAO",
+  photo_url: "https://i.pinimg.com/originals/7c/70/85/7c70855b38a9fb0c561dd84d4f1eaeab.jpg",
 )
 
 hulk = Superhero.create(
@@ -93,7 +93,7 @@ hulk = Superhero.create(
   price: 1_000_000,
   superpower: "Look at him!!",
   user_id: alex.id,
-  photo_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fhulkcollection.wordpress.com%2F2020%2F02%2F26%2Fummm-part-77%2F&psig=AOvVaw1I0ym9sr2jxwmentig8QD8&ust=1677687650413000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCPDN7dXPuP0CFQAAAAAdAAAAABAH",
+  photo_url: "https://hulkcollection.files.wordpress.com/2019/09/ummm4.jpg",
 )
 
 buzz = Superhero.create(
@@ -102,25 +102,24 @@ buzz = Superhero.create(
   price: 2,
   superpower: "Randomly dying when his human walks in.",
   user_id: alex.id,
-  photo_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F717831628076001084%2F&psig=AOvVaw1FKNAmCsNZNPL_ouf0IVpS&ust=1677687677239000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCKj6v-LPuP0CFQAAAAAdAAAAABAE",
+  photo_url: "https://img-9gag-fun.9cache.com/photo/aze5yxq_460s.jpg",
 )
 
 ironman = Superhero.create(
-  name: "Buzz Light-Year",
+  name: "Iron-Man",
   description: "Iron Man is like a billionaire playboy with a fancy suit that's more high-tech than a NASA spaceship. He's got gadgets and gizmos aplenty, and a snarky sense of humor to match. Tony Stark may be a genius inventor, but he's also a bit of a show-off, with his suit covered in flashy lights and colors that scream, look at me, I'm a superhero! And let's not forget about his epic beard - it's like he's trying to prove that even a superhero can rock a lumberjack look. But when it comes down to it, Iron Man is the ultimate protector of the planet, and he's not afraid to put his high-tech toys to use to save the day. Just don't ask him to share his toys with anyone else - that's a battle he's not likely to win!",
   price: 52,
   superpower: "Who even knows",
   user_id: alex.id,
-  photo_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ebay.co.uk%2Fp%2F1277829482&psig=AOvVaw2Wxcj5UYtTW2lFlrUoDCXx&ust=1677687730954000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLCmmvzPuP0CFQAAAAAdAAAAABAE",
+  photo_url: "https://i.pinimg.com/originals/89/2f/50/892f500552fd3367c16ec1dc95c0ef66.jpg",
 )
-
 robin = Superhero.create(
   name: "Robin",
   description: "Robin is like the ultimate superhero sidekick - he's got all the enthusiasm of a golden retriever and the fashion sense of a peacock. He's always eager to lend a helping hand, even if that means he's just there to hold Batman's cape while he does the real hero stuff. And let's not forget about his signature green and yellow costume - it's like he's trying to blend in with a pack of highlighters. But even though he may not be the dark knight's equal in terms of strength or brains, Robin's got heart, and that's what counts. He's like the little brother that Batman never wanted, but secretly loves anyway. So if you're ever in Gotham City and you need a hero to show you around, just look for the guy in the neon tights - he's ready to save the day, one awkward high-five at a time!",
   price: 80_085,
   superpower: "Sponging off of Batman's success",
   user_id: alex.id,
-  photo_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Frockin-robinz.tumblr.com%2Fpost%2F633681448201764864%2Fembed&psig=AOvVaw04DOIFCWSA1k9PKreAJqfd&ust=1677687759976000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCPiI8onQuP0CFQAAAAAdAAAAABAE",
+  photo_url: "https://64.media.tumblr.com/399b59ce79556d2eaed1f04bab8b7a8c/c96a9bda17f417e8-26/s640x960/7af381b3c7f0b714d198328263d3090eec06a44c.jpg",
 )
 puts "Created #{Superhero.count} superheros"
 
