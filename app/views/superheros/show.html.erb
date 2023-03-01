@@ -9,3 +9,10 @@
     <%= link_to "Back to Superheros", superheros_path %>
   </div>
 </div>
+<div class= "container">
+  <%= simple_form_for [@superhero, @booking] do |f| %>
+  <%= f.input :start_date, html5: true %>
+  <%= f.input :end_date, html5: true %>
+  <%= f.submit "Book Superhero" %>
+  <% end %>
+</div>
