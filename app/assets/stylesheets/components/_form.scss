@@ -1,0 +1,48 @@
+.create_form_container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.create_form_card {
+  border: 1px solid #ccc;
+  width: 500px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  background-color: #faf0e6;
+}
+
+.form-actions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C00500;
+  border-style: solid;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 10px;
+  font-family: 'Russo One', sans-serif;
+}
+
+.form-actions:hover {
+  width: 100%;
+  background-color: white;
+  border-style: dotted;
+  border-color: #C00500;
+  color: #C00500;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 10px;
+  font-family: 'Russo One', sans-serif;
+}
+
+.form-inputs {
+  margin-bottom: 20px;
+}

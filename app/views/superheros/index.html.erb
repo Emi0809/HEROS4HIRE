@@ -1,22 +1,24 @@
-<h1>Superheros</h1>
+<h1 class="super-heading">HEROES-4-HIRE</h1>
 
+<div class="new_hero">
+  <%= link_to "Add a Superhero", new_superhero_path, class:"add-hero"%>
+</div>
 
-<%= link_to "Create a new Superhero", new_superhero_path, class:"btn btn-primary"%>
-
-<div>
-  <div class="superheros">
-    <div class="cards">
-      <% @superheros.each do |superhero| %>
-        <div class="card">
-          <img src="<%= superhero.photo_url %>" alt="<%= superhero.name %>">
+<div class="superheros">
+  <div class="cards">
+    <% @superheros.each do |superhero| %>
+      <div class="card">
+        <img src="<%= superhero.photo_url %>" alt="<%= superhero.name %>">
+        <div class="card-text">
           <div class="info">
-            <h1><%= superhero.name %></h1>
+            <h2><%= superhero.name.upcase %></h2>
             <p><strong>Superpower:</strong> <%= superhero.superpower %></p>
-            <p><strong>Description:</strong> <%= superhero.description %></p>
-            <%= link_to "Show this Superhero",  superhero_path(superhero), class:"btn btn-warning" %>
           </div>
+          <%= link_to "More Info",  superhero_path(superhero), class:"info-button"%>
         </div>
-      <% end %>
-    </div>
+      </div>
+    <% end %>
   </div>
 </div>
+
+<%= render "shared/footer" %>

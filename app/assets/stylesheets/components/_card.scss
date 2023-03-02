@@ -2,26 +2,31 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 16px;
+  background-color: #faf0e6;
 }
 
 .card img {
-  max-width: 50%;
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+  object-position: top;
   margin-bottom: 16px;
   border-radius: 8px;
 }
 
-.card h1 {
+.card h2 {
   font-size: 24px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
 }
 
 .card p {
-  font-size: 16px;
-  margin-bottom: 0;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-align: left;
 }
 
 .cards {
@@ -30,6 +35,91 @@
   grid-gap: 16px;
 }
 
+.superheros {
+  margin: 20px;
+  margin-top: 0px;
+}
+
+.new_hero {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.super-heading {
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+  align-items: center;
+  color: white;
+  background-color:#C00500;
+  padding: 20px
+}
 // .show_hero_button {
 
+.info-button {
+  background-color: white;
+  border-style: solid;
+  border-color: grey;
+  border-width: 2px;
+  color: black;
+  padding: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-decoration: none;
+}
+
+.info-button:hover {
+  background-color: white;
+  border-style: solid;
+  border-color: grey;
+  border-width: 4px;
+  color: black;
+  padding: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-decoration: none;
+}
+
+.add-hero {
+  background-color: white;
+  border-style: solid;
+  border-color: #C00500;
+  color: #C00500;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 10px;
+  font-family: 'Russo One', sans-serif;
+}
+
+.add-hero:hover {
+  background-color: #C00500;
+  border-style: solid;
+  border-color: #C00500;
+  color: white;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 10px;
+  font-family: 'Russo One', sans-serif;
+}
+
+.card-text {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 // }
