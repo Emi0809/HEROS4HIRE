@@ -1,19 +1,18 @@
 <h1>Create a new Superhero</h1>
 
-<%= simple_form_for(@superhero) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :price %>
-    <%= f.input :superpower%>
-    <%= f.input :description %>
-    <%= f.input :photo_url %>
-  </div>
+<div class="create_form_container">
+  <div class ="create_form_card">
+    <%= simple_form_for(@superhero) do |f| %>
+      <div class="form-inputs">
+        <%= f.input :name %>
+        <%= f.input :price %>
+        <%= f.input :superpower%>
+        <%= f.input :description %>
+        <%= f.input :photo_url %>
+      </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
+      <%= f.button :submit, class: "form-actions" %>
 
+    <% end %>
+  </div>
 <div>
-  <%= link_to "Go back to Superheros", superheros_path %>
-</div>
