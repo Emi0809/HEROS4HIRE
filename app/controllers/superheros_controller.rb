@@ -6,6 +6,10 @@ class SuperherosController < ApplicationController
 
   def show
     @booking = Booking.new
+    @markers = [{
+      lat: @superhero.latitude,
+      lng: @superhero.longitude
+    }]
   end
 
   def new
@@ -31,4 +35,5 @@ class SuperherosController < ApplicationController
   def superhero_params
     params.require(:superhero).permit(:name, :description, :price, :superpower)
   end
+
 end

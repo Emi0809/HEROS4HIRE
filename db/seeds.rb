@@ -33,13 +33,16 @@ puts '-----------------------'
 
 puts 'creating new superheros....'
 
+location = ['london', 'rome', 'mallorca', 'barcelona']
+
 spiderman = Superhero.create(
   name: "Spiderman",
   description: "Your best friend and coolest superhero",
   price: 100,
   superpower: "superweb",
   photo_url:"https://blog.playstation.com/tachyon/2022/06/0c3c20a8d8514501524a0859461f391572ea6e61.jpg",
-  user_id: jose.id
+  user_id: jose.id,
+  address: location.sample
 )
 
 batman = Superhero.create(
@@ -48,7 +51,8 @@ batman = Superhero.create(
   price: 200000000,
   superpower: "super intelligence",
   photo_url:"https://live.staticflickr.com/3433/3987139213_2b2cdab4a7_b.jpg",
-  user_id: jose.id
+  user_id: jose.id,
+  address: location.sample
 )
 
 barbarian = Superhero.create(
@@ -57,7 +61,8 @@ barbarian = Superhero.create(
   price: 500000,
   superpower: "The power of knowledge",
   photo_url: "https://cdn.britannica.com/31/182831-050-3F0A0CCE/Arnold-Schwarzenegger-title-character-Conan-the-Destroyer.jpg?w=300&h=300",
-  user_id: jose.id
+  user_id: jose.id,
+  address: location.sample
 )
 
 thor = Superhero.create(
@@ -66,7 +71,8 @@ thor = Superhero.create(
   price: 100000000,
   superpower: "The power of love",
   photo_url: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Chris_Hemsworth_as_Thor.jpg/220px-Chris_Hemsworth_as_Thor.jpg",
-  user_id: jose.id
+  user_id: jose.id,
+  address: location.sample
 )
 
 aquaman = Superhero.create(
@@ -75,7 +81,8 @@ aquaman = Superhero.create(
   price: 1,
   superpower: "just a normal guy that knows how to swim",
   photo_url: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/aquaman-1550228807.jpg?crop=0.796xw:0.796xh;0.156xw,0.112xh&resize=1200:*",
-  user_id: jose.id
+  user_id: jose.id,
+  address: location.sample
 )
 
 wonderwoman = Superhero.create(
@@ -83,8 +90,9 @@ wonderwoman = Superhero.create(
   description: "Wonder Woman is like a fierce and fabulous Amazonian goddess who can kick butt and take names while rocking a tiara and bullet-deflecting bracelets. She's got more strength than a lasso of truth and more style than a superhero fashion runway show. And let's not forget about her invisible jet - it's like the ultimate Uber ride, except you can't see it and the driver is a demigoddess. Overall, Wonder Woman is the ultimate mix of beauty, brains, and brawn, and she's not afraid to use all of them to save the world!",
   price: 69,
   superpower: "Flying",
-  user_id: alex.id,
   photo_url: "https://i.pinimg.com/originals/7c/70/85/7c70855b38a9fb0c561dd84d4f1eaeab.jpg",
+  user_id: alex.id,
+  address: location.sample
 )
 
 hulk = Superhero.create(
@@ -94,6 +102,7 @@ hulk = Superhero.create(
   superpower: "Look at him!!",
   user_id: alex.id,
   photo_url: "https://hulkcollection.files.wordpress.com/2019/09/ummm4.jpg",
+  address: location.sample
 )
 
 buzz = Superhero.create(
@@ -103,7 +112,9 @@ buzz = Superhero.create(
   superpower: "Randomly dying when his human walks in.",
   user_id: alex.id,
   photo_url: "https://img-9gag-fun.9cache.com/photo/aze5yxq_460s.jpg",
+  address: location.sample
 )
+
 
 ironman = Superhero.create(
   name: "Iron-Man",
@@ -112,6 +123,7 @@ ironman = Superhero.create(
   superpower: "Who even knows",
   user_id: alex.id,
   photo_url: "https://i.pinimg.com/originals/89/2f/50/892f500552fd3367c16ec1dc95c0ef66.jpg",
+  address: location.sample
 )
 robin = Superhero.create(
   name: "Robin",
@@ -120,6 +132,7 @@ robin = Superhero.create(
   superpower: "Sponging off of Batman's success",
   user_id: alex.id,
   photo_url: "https://64.media.tumblr.com/399b59ce79556d2eaed1f04bab8b7a8c/c96a9bda17f417e8-26/s640x960/7af381b3c7f0b714d198328263d3090eec06a44c.jpg",
+  address: location.sample
 )
 puts "Created #{Superhero.count} superheros"
 

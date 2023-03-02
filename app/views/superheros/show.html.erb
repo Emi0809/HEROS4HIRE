@@ -1,28 +1,37 @@
 
+  <div class="back-button d-flex justify-content-start">
+    <%= link_to "Back to Superheros", superheros_path, class:"btn btn-secondary", style:"text-align:center" %>
+  </div>
 <div class="container d-flex", style='justify-content: center'>
-  <div class="card-trip" style="width:300px">
+  <div class="card-trip col-6">
+    <h2 class="card-title"><%= @superhero.name %></h2>
     <img src="<%= @superhero.photo_url %>" class="img-show" >
-    <div class="card-trip-infos">
-      <div>
-        <h2 class="card-title"><%= @superhero.name %></h2>
-        <p class="card-text"><%= @superhero.description %></p>
-        <p class="card-text"><%= @superhero.superpower %></p>
-      </div>
-      <h2 class="card-trip-pricing">£<%= @superhero.price %></h2>
+  </div>
+  <div class= "col">
+
+    <div class="card-details">
+      <p class="card-text"><strong>Description: </strong><%= @superhero.description %></p>
+      <p class="card-text"><strong>Superpower: </strong><%= @superhero.superpower %></p>
+
+      <p class="card-trip-pricing"><strong>Price: </strong>£<%= @superhero.price %></p>
       <%# <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" /> %>
     </div>
-  </div>
 
-  <div class= "w-50">
-    <%= simple_form_for [@superhero, @booking] do |f| %>
-    <%= f.input :start_date, html5: true %>
-    <%= f.input :end_date, html5: true %>
-    <%= f.submit "Book Superhero", class:"btn btn-primary" %>
-    <% end %>
-  </div>
-  <div>
+    <div class= "card-booking col w-30">
+      <%= simple_form_for [@superhero, @booking] do |f| %>
+      <%= f.input :start_date, html5: true %>
+      <%= f.input :end_date, html5: true %>
+      <%= f.submit "Book Superhero", class:"btn btn-primary" %>
+      <% end %>
+    </div>
+
   </div>
 </div>
-<div class="container d-flex justify-content-center">
-  <%= link_to "Back to Superheros", superheros_path, class:"btn btn-secondary", style:"text-align:center" %>
+
+<div data-controller="map"
+  data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"
+  data-map-markers-value="<%= @markers.to_json %>"
+  id='map'
+  style='width: 100%;
+  height: 300px;'>
 </div>
