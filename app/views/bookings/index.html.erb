@@ -10,10 +10,10 @@
           <div class="info">
             <h2><%= booking.superhero.name.upcase %></h2>
             <p><strong>Superpower:</strong> <%= booking.superhero.superpower %></p>
-            <p><strong>From: </strong><%= booking.start_date.strftime("%A, %b %d") %></p>
-            <p><strong>Until: </strong><%= booking.end_date.strftime("%A, %b %d") %></p>
+            <p><strong>From: </strong><%= booking.start_date %></p>
+            <p><strong>Until: </strong><%= booking.end_date %></p>
             <%= link_to booking_path(booking), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete?" } do %>
-                <i class="fa-solid fa-trash" style = "width: 20px; height: 20px; position:relative; left:110px; bottom:90px;"></i>
+                <i class="fa-solid fa-trash"></i>
                 <% end %>
                 </div>
           </div>
