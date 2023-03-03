@@ -6,10 +6,7 @@
   <div class="card-trip col-6">
     <h2 class="card-title"><%= @superhero.name %></h2>
     <img src="<%= @superhero.photo_url %>" class="img-show" >
-    <%= link_to superhero_path(@superhero), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this workout log?" } do %>
-                <i class="fa-solid fa-trash" style = "width: 20px; height: 20px; position:relative; left:110px; bottom:90px;"></i>
-                <% end %>
-                </div>
+  </div>
   <div class= "col">
 
     <div class="card-details">
