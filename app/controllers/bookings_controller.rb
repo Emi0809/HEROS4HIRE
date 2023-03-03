@@ -1,8 +1,10 @@
 class BookingsController < ApplicationController
   before_action :set_superhero, only: [:new, :create]
+  before_action :set_booking, only: [:destroy]
 
   def index
     @bookings = Booking.where(user: current_user)
+    @superheros = Superhero.where(user: current_user)
   end
 
   def new
@@ -20,10 +22,22 @@ class BookingsController < ApplicationController
     end
   end
 
+  def destroy
+    if @booking.destroy
+     redirect_to bookings_path, status: :see_other
+    else
+      render "bookings/index"
+    end
+  end
+
   private
 
   def set_superhero
     @superhero = Superhero.find(params[:superhero_id])
+  end
+
+  def set_booking
+    @booking = Booking.find(params[:id])
   end
 
   def booking_params
