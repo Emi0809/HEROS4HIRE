@@ -102,6 +102,7 @@
   padding-right: 50px;
   border-radius: 10px;
   font-family: 'Russo One', sans-serif;
+  text-decoration: none;
 }
 
 .add-hero:hover {
@@ -117,7 +118,6 @@
 }
 
 .card-text {
-  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
