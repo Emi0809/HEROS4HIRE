@@ -144,3 +144,20 @@
 .home-title{
   font-family: 'Russo One', sans-serif;
 }
+
+.hero-btn {
+  margin-left: 5px;
+  color: white;
+  background: black;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  margin-top: 25px ;
+  margin-bottom: -25px;
+  font-family: 'Russo One', sans-serif;
+}
+
+
+.home-btn-dark:hover{
+  background-color:rgb(43, 43, 43);
+  color:white;
+}
