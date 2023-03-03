@@ -1,17 +1,26 @@
 <h1 class="super-heading">Add your Superhero</h1>
 
-<%= simple_form_for(@superhero) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :price %>
-    <%= f.input :superpower%>
-    <%= f.input :description %>
-    <%= f.input :photo_url %>
-    <%= f.input :address %>
-  </div>
+<div class = "create_form_container">
+  <div class = "create_form_card">
+    <%= simple_form_for(@superhero) do |f| %>
+      <div class="form-inputs">
+        <%= f.input :name %>
+        <%= f.input :price %>
+        <%= f.input :superpower%>
+        <%= f.input :description %>
+        <%= f.input :photo_url %>
+        <%= f.input :address %>
+      </div>
+<<<<<<< HEAD
 
       <%= f.button :submit, class: "form-actions", value: "Add Superhero" %>
 
     <% end %>
   </div>
-<div>
+</div>
+=======
+  <%= f.button :submit, class: "form-actions", value: "Add Superhero" %>
+<% end %>
+  </div>
+</div>
+>>>>>>> 66a63fe27a7ae30a7f948daa786b308d0a79b16d

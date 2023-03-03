@@ -1,5 +1,5 @@
 class SuperherosController < ApplicationController
-  before_action :set_superhero, only: :show
+  before_action :set_superhero, only: [:show, :edit, :update, :destroy]
   def index
     if params[:query].present?
       sql_query = "name ILIKE :query OR description ILIKE :query"
@@ -25,9 +25,28 @@ class SuperherosController < ApplicationController
     @superhero = Superhero.new(superhero_params)
     @superhero.user = current_user
     if @superhero.save
-      redirect_to @superhero, notice: "Your Superhero has been created!"
+      redirect_to @superhero, notice:"Your Superhero has been created!"
     else
       render :new, status: :unprocessable_entity
+    end
+  end
+
+  def edit
+  end
+
+  def update
+    if @superhero.update(superhero_params)
+      redirect_to @superhero, notice: "Your Superhero has been changed successfully!"
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  end
+
+  def destroy
+    if @superhero.destroy
+     redirect_to superheros_path, status: :see_other
+    else
+      render "superheros/index"
     end
   end
 

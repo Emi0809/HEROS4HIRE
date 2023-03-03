@@ -87,7 +87,7 @@ aquaman = Superhero.create(
 
 wonderwoman = Superhero.create(
   name: "Wonderwoman",
-  description: "Wonder Woman is like a fierce and fabulous Amazonian goddess who can kick butt and take names while rocking a tiara and bullet-deflecting bracelets. She's got more strength than a lasso of truth and more style than a superhero fashion runway show. And let's not forget about her invisible jet - it's like the ultimate Uber ride, except you can't see it and the driver is a demigoddess. Overall, Wonder Woman is the ultimate mix of beauty, brains, and brawn, and she's not afraid to use all of them to save the world!",
+  description: "I am an exotic Amazon kicker asses. I am the ultimate mix of beauty",
   price: 69,
   superpower: "Flying",
   photo_url: "https://i.pinimg.com/originals/7c/70/85/7c70855b38a9fb0c561dd84d4f1eaeab.jpg",
@@ -97,7 +97,7 @@ wonderwoman = Superhero.create(
 
 hulk = Superhero.create(
   name: "The Incredible Hulk",
-  description: "The Hulk is like a walking talking rage monster, with muscles bigger than a boulder and a temper hotter than a volcano. When he's not smashing things, he's probably just really angry about something, like forgetting his keys or spilling his coffee. And don't even get him started on traffic - that's enough to turn him green with rage! But let's face it, when you need someone to do some serious heavy lifting or demolishing, the Hulk is your guy. Just don't make him mad, or you might end up with a one-way ticket to outer space!",
+  description: "...",
   price: 1_000_000,
   superpower: "Look at him!!",
   user_id: alex.id,
@@ -107,7 +107,7 @@ hulk = Superhero.create(
 
 buzz = Superhero.create(
   name: "Buzz Light-Year",
-  description: "Buzz Lightyear is like a space cadet on a mission to infinity and beyond, with a laser blaster that's more powerful than a pack of angry aliens. He's got a heart of plastic and the courage of a spork, which is pretty impressive if you ask me. Plus, he's got wings that pop out of his back like a giant toy surprise, which is perfect for those times when you need to make a quick escape from Andy's room. And let's not forget his catchphrase - To infinity and beyond! - which is like the superhero version of I'll be back. All in all, Buzz Lightyear is the ultimate action figure come to life, and he's ready to take on the universe, one toy box at a time!",
+  description: "....!",
   price: 2,
   superpower: "Randomly dying when his human walks in.",
   user_id: alex.id,
@@ -118,7 +118,7 @@ buzz = Superhero.create(
 
 ironman = Superhero.create(
   name: "Iron-Man",
-  description: "Iron Man is like a billionaire playboy with a fancy suit that's more high-tech than a NASA spaceship. He's got gadgets and gizmos aplenty, and a snarky sense of humor to match. Tony Stark may be a genius inventor, but he's also a bit of a show-off, with his suit covered in flashy lights and colors that scream, look at me, I'm a superhero! And let's not forget about his epic beard - it's like he's trying to prove that even a superhero can rock a lumberjack look. But when it comes down to it, Iron Man is the ultimate protector of the planet, and he's not afraid to put his high-tech toys to use to save the day. Just don't ask him to share his toys with anyone else - that's a battle he's not likely to win!",
+  description: "...",
   price: 52,
   superpower: "Who even knows",
   user_id: alex.id,
@@ -127,7 +127,7 @@ ironman = Superhero.create(
 )
 robin = Superhero.create(
   name: "Robin",
-  description: "Robin is like the ultimate superhero sidekick - he's got all the enthusiasm of a golden retriever and the fashion sense of a peacock. He's always eager to lend a helping hand, even if that means he's just there to hold Batman's cape while he does the real hero stuff. And let's not forget about his signature green and yellow costume - it's like he's trying to blend in with a pack of highlighters. But even though he may not be the dark knight's equal in terms of strength or brains, Robin's got heart, and that's what counts. He's like the little brother that Batman never wanted, but secretly loves anyway. So if you're ever in Gotham City and you need a hero to show you around, just look for the guy in the neon tights - he's ready to save the day, one awkward high-five at a time!",
+  description: "...",
   price: 80_085,
   superpower: "Sponging off of Batman's success",
   user_id: alex.id,
