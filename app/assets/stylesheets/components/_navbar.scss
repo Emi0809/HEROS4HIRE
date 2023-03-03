@@ -1,6 +1,8 @@
+
 .navbar-lewagon {
   justify-content: space-between;
   background:rgb(255, 255, 255);
+
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -32,4 +34,7 @@
   border: 1px solid #1EDD88;
   outline: none !important;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.nav-link{
+  font-family: 'Russo One', sans-serif;
 }

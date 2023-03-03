@@ -6,6 +6,7 @@
 }
 
 .banner h1 {
+  font-family: 'Russo One', sans-serif;
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
@@ -14,6 +15,7 @@
 }
 
 .banner p {
+  font-family: 'Russo One', sans-serif;
   padding-top: 10px;
   padding-bottom: 20px;
   font-size: 20px;
@@ -23,6 +25,7 @@
 }
 
 .btn-flat {
+  font-family: 'Russo One', sans-serif;
   color: 920100;
   padding: 8px 24px;
   border-radius: 4px;
@@ -37,7 +40,7 @@
 }
 
 .btn-dark{
-
+  margin-left: 5px;
   color: white;
   background: black;
   border-radius: 5px;
@@ -57,20 +60,21 @@
 }
 
 .footer {
-  background: #cbcbcb;
+  background: rgba(245, 245, 245, 0.833);
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100px;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  color: #000000(174, 17, 17, 0.3);
 }
 .footer-links {
   display: flex;
   align-items: center;
+  color: #000000;
 }
 .footer-links a {
-  color: black;
+  color: #920100;
   opacity: 0.15;
   text-decoration: none;
   font-size: 24px;
@@ -80,6 +84,9 @@
   opacity: 1;
 }
 
+.footer img{
+  width: 60px
+}
 
 
 .searchbar {
@@ -93,10 +100,13 @@
 }
 
 .card-infos {
+
   padding-top: 100px;
   padding-bottom: 80px;
   text-align: center;
   color: #000000;
+
+
 }
 
 .card-padding-bottom {
@@ -113,17 +123,23 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-.card-title {
+.card-title-home {
+  font-family: 'Russo One', sans-serif;
   padding-top: 10px;
   padding-bottom: 10px;
   color:#ffffff
 }
 
-.card-text {
+.card-text-home {
+  font-family: 'Russo One', sans-serif;
   color: #ffffff;
 }
 
 
 .card-img-top {
   border-radius: 5%;
+}
+
+.home-title{
+  font-family: 'Russo One', sans-serif;
 }
