@@ -1,4 +1,4 @@
-<h1>Create a new Superhero</h1>
+<h1 class="super-heading">Add your Superhero</h1>
 
 <%= simple_form_for(@superhero) do |f| %>
   <div class="form-inputs">
@@ -7,13 +7,11 @@
     <%= f.input :superpower%>
     <%= f.input :description %>
     <%= f.input :photo_url %>
+    <%= f.input :address %>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
+      <%= f.button :submit, class: "form-actions", value: "Add Superhero" %>
 
+    <% end %>
+  </div>
 <div>
-  <%= link_to "Go back to Superheros", superheros_path %>
-</div>
