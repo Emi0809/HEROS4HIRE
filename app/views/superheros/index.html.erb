@@ -13,6 +13,7 @@
           <div class="info">
             <h2><%= superhero.name.upcase %></h2>
             <p><strong>Superpower:</strong> <%= superhero.superpower %></p>
+            <p><strong>Price:</strong> £<%= superhero.price %></p>
           </div>
           <%= link_to "More Info",  superhero_path(superhero), class:"info-button"%>
         </div>
