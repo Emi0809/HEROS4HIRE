@@ -1,7 +1,12 @@
 class SuperherosController < ApplicationController
   before_action :set_superhero, only: :show
   def index
-    @superheros = Superhero.all
+    if params[:query].present?
+      sql_query = "name ILIKE :query OR description ILIKE :query"
+      @superheroes = Superhero.where(sql_query, query: "%#{params[:query]}%")
+    else
+      @superheroes = Superhero.all
+    end
   end
 
   def show
@@ -29,6 +34,6 @@ class SuperherosController < ApplicationController
   end
 
   def superhero_params
-    params.require(:superhero).permit(:name, :description, :price, :superpower)
+    params.require(:superhero).permit(:name, :description, :price, :superpower, :photo_url)
   end
 end
