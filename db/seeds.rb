@@ -97,9 +97,9 @@ wonderwoman = Superhero.create(
 
 hulk = Superhero.create(
   name: "The Incredible Hulk",
-  description: "...",
+  description: "Hulk smash!",
   price: 1_000_000,
-  superpower: "Look at him!!",
+  superpower: "Smashing things!",
   user_id: alex.id,
   photo_url: "https://hulkcollection.files.wordpress.com/2019/09/ummm4.jpg",
   address: location.sample
@@ -107,7 +107,7 @@ hulk = Superhero.create(
 
 buzz = Superhero.create(
   name: "Buzz Light-Year",
-  description: "....!",
+  description: "To infinity, and beyond!",
   price: 2,
   superpower: "Randomly dying when his human walks in.",
   user_id: alex.id,
@@ -118,7 +118,7 @@ buzz = Superhero.create(
 
 ironman = Superhero.create(
   name: "Iron-Man",
-  description: "...",
+  description: "Proficient scientist and engineer, Genius level intellect, Superhuman strength",
   price: 52,
   superpower: "Who even knows",
   user_id: alex.id,
@@ -127,7 +127,7 @@ ironman = Superhero.create(
 )
 robin = Superhero.create(
   name: "Robin",
-  description: "...",
+  description: "sidekick",
   price: 80_085,
   superpower: "Sponging off of Batman's success",
   user_id: alex.id,
