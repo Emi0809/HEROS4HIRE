@@ -8,7 +8,9 @@
   <div class="cards">
     <% @superheros.each do |superhero| %>
       <div class="card">
+      <%= link_to superhero_path(superhero) do %>
         <img src="<%= superhero.photo_url %>" alt="<%= superhero.name %>">
+        <% end %>
         <div class="card-text">
           <div class="info">
             <h2><%= superhero.name.upcase %></h2>
