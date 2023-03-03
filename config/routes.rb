@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :superheros do
     resources :bookings, only: [:new, :create]
   end
-  resources :bookings, only: :index
+  resources :bookings, only: [:index, :destroy]
   # resources :reviews, only [:index, :new, :create]
 # Defines the root path route ("/")
   # root "articles#index"
