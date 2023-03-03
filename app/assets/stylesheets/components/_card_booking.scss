@@ -1,12 +1,12 @@
-.card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  background-color: #faf0e6;
-  width: 50vh;
-  margin: 5vh;
-}
+// .card {
+//   border: 1px solid #ccc;
+//   border-radius: 8px;
+//   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+//   padding: 16px;
+//   background-color: #faf0e6;
+//   width: 50vh;
+//   margin: 5vh;
+// }
 
 .card img {
   width: 100%;
@@ -118,10 +118,14 @@
   border-radius: 10px;
   font-family: 'Russo One', sans-serif;
 }
+.booking-card{
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  background-color: #faf0e6;
+  width: 50vh;
+  margin: 5vh;
 
-.card-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 // }
