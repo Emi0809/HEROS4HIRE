@@ -3,9 +3,9 @@ class SuperherosController < ApplicationController
   def index
     if params[:query].present?
       sql_query = "name ILIKE :query OR description ILIKE :query"
-      @superheroes = Superhero.where(sql_query, query: "%#{params[:query]}%")
+      @superheros = Superhero.where(sql_query, query: "%#{params[:query]}%")
     else
-      @superheroes = Superhero.all
+      @superheros = Superhero.all
     end
   end
 
