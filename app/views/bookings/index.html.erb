@@ -1,8 +1,7 @@
 <h1 class="super-heading">My Bookings</h1>
 
-
-<div class="superheros d-flex">
-  <div class="cards-booking">
+<div class="superheros">
+  <div class="cards">
     <% @bookings.each do |booking| %>
       <div class="card">
         <img src="<%= booking.superhero.photo_url %>" alt="<%= booking.superhero.name %>">
@@ -10,13 +9,13 @@
           <div class="info">
             <h2><%= booking.superhero.name.upcase %></h2>
             <p><strong>Superpower:</strong> <%= booking.superhero.superpower %></p>
-            <p><strong>From: </strong><%= booking.start_date %></p>
-            <p><strong>Until: </strong><%= booking.end_date %></p>
-            <%= link_to booking_path(booking), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete?" } do %>
-                <i class="fa-solid fa-trash" style = "width: 20px; height: 20px; position:relative; left:240px; bottom:5px;"></i>
-                <% end %>
-                </div>
+            <p><strong>Price:</strong> £<%= booking.superhero.price %></p>
+            <p><strong>From: </strong><%= booking.start_date.strftime("%A, %b %d") %></p>
+            <p><strong>Until: </strong><%= booking.end_date.strftime("%A, %b %d") %></p>
           </div>
+            <%= link_to booking_path(booking), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete?" } do %>
+              <i class="fa-solid fa-trash" style = "width: 20px; height: 20px; position:relative; left:240px; bottom:5px; color:black"></i>
+            <% end %>
         </div>
       </div>
     <% end %>

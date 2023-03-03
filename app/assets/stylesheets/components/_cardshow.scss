@@ -47,3 +47,9 @@ h2{
   border: 1px solid #ccc;
   background-color: #faf0e6;
 }
+
+card-text-show {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
